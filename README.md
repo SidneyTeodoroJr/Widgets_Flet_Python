@@ -8,7 +8,7 @@
 </br>
 
  <p>
-  Os Widgets são micro aplicativos que são exibidos na tela de um computador, numa página da web ou num dispositivo móvel. No caso do Android, são ferramentas interativas que visam proporcionar acesso a certas funções dos aplicativos que você baixou no seu telefone.
+  Os Widgets são micro aplicativos que são exibidos na tela de um computador, numa página da web ou num dispositivo móvel.
  </p>
  </br>
  
