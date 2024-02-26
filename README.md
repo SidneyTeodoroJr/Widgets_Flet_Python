@@ -8,12 +8,7 @@
 </br>
 
  <p>
-  Os Widgets são micro aplicativos que são exibidos na tela de um computador, numa página da web ou num dispositivo móvel.
- </p>
- </br>
- 
- <p>
-  Flet oferece uma ampla variedade de widgets para construção de interfaces. Neste repositório está alguns dos mais comuns.
+  Os Widgets são micro aplicativos que são exibidos na tela de um computador, numa página da web ou num dispositivo móvel. Flet oferece uma ampla variedade de widgets para construção de interfaces. Neste repositório está alguns dos mais comuns.
  </p>
  </br>
  
