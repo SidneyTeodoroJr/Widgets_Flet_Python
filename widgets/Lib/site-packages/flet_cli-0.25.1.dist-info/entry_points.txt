@@ -1,0 +1,3 @@
+[pyinstaller40]
+hook-dirs=flet_cli.__pyinstaller:get_hook_dirs
+

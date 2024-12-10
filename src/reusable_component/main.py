@@ -1,13 +1,12 @@
-import flet 
-from flet import Page
+import flet as ft
 
 from customText import CustomText
 
 text="Variable text"
 
-def main(page:Page):
+def main(page:ft.Page):
     page.title="Reusable Component"
-    page.theme_mode=flet.ThemeMode.SYSTEM
+    page.theme_mode=ft.ThemeMode.LIGHT
 
     page.add(
         CustomText(
@@ -20,4 +19,4 @@ def main(page:Page):
     )
 
     page.update()
-flet.app(target=main)
+ft.app(target=main)

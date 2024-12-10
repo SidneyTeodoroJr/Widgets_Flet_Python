@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: flet-cli
+Version: 0.25.1
+Summary: Flet CLI
+License: Apache-2.0
+Author: Appveyor Systems Inc.
+Author-email: hello@flet.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cookiecutter (>=2.6.0,<3.0.0)
+Requires-Dist: flet (==0.25.1)
+Requires-Dist: packaging
+Requires-Dist: qrcode (>=7.4.2,<8.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: watchdog (>=4.0.0,<5.0.0)
+Project-URL: documentation, https://flet.dev/docs
+Project-URL: homepage, https://flet.dev
+Project-URL: repository, https://github.com/flet-dev/flet
+Description-Content-Type: text/markdown
+
+# Flet CLI
+
+Flet CLI is a command-line interface tool for Flet, a framework for building interactive multi-platform applications using Python.
+
+## Features
+
+- Create new Flet projects
+- Run Flet applications
+- Package and deploy Flet apps
+
+## Basic Usage
+
+To create a new Flet project:
+
+```
+flet create myapp
+```

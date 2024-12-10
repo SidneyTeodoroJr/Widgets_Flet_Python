@@ -1,7 +1,7 @@
 from flet import UserControl, Text, colors
 
 class CustomText(UserControl):
-    def __init__(self, value:str, color=colors.TEAL_400, size=30):
+    def __init__(self, value:str, color=ft.colors.TEAL_400, size=30):
         super().__init__()
 
         self.value=value
