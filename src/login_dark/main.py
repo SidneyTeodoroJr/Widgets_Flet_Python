@@ -29,7 +29,7 @@ def main(page: ft.Page):
         width=1280,
         height=720,
         margin=ft.margin.all(-10),
-        image_src=os.path.join("my-app", "assets", "bg-2.png"),
+        image_src=os.path.join("bg-2.png"),
 
         image_fit=ft.ImageFit.COVER,
         alignment=ft.alignment.center,
@@ -64,8 +64,8 @@ def main(page: ft.Page):
                          label_style=ft.TextStyle(color=ft.colors.WHITE, size=15),
                          active_color=ft.colors.BLACK,
                          track_color=ft.colors.WHITE,
-                         width=250,
-                         offset=ft.Offset(x=0, y=0.3)
+                         width=50,
+                         offset=ft.Offset(x=-2, y=0.3)
                 ),
 
                 ft.ElevatedButton("Acessar",
@@ -107,4 +107,4 @@ def main(page: ft.Page):
     )
     
     page.update()
-ft.app(main)
+ft.app(main, assets_dir=os.path.join("my-app", "assets"),)
