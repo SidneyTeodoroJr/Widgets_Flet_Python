@@ -1,7 +1,7 @@
-from flet import UserControl, Text, colors
+import flet as ft
 
 class CustomText(UserControl):
-    def __init__(self, value:str, color=ft.colors.TEAL_400, size=30):
+    def __init__(self, value:str, color=ft.Colors.TEAL_400, size=30):
         super().__init__()
 
         self.value=value
@@ -9,7 +9,7 @@ class CustomText(UserControl):
         self.size=size
 
     def build(self):
-        return Text(
+        return ft.Text(
             value=self.value,
             color=self.color,
             size=self.size
