@@ -1,12 +1,11 @@
-import flet as ft
+from flet import Page, ThemeMode, app
+from customText import CustomText  # Certifique-se de que o arquivo customText.py está no mesmo diretório ou no caminho correto
 
-from customText import CustomText
+text = "Variable text"
 
-text="Variable text"
-
-def main(page:ft.Page):
-    page.title="Reusable Component"
-    page.theme_mode=ft.ThemeMode.LIGHT
+def main(page: Page):
+    page.title = "Reusable Component"
+    page.theme_mode = ThemeMode.SYSTEM
 
     page.add(
         CustomText(
@@ -19,4 +18,6 @@ def main(page:ft.Page):
     )
 
     page.update()
-ft.app(target=main)
+
+if __name__ == "__main__":
+    app(target=main)
