@@ -4,7 +4,7 @@ import asyncio
 
 def main(page: Page):
     page.title = "Animated Text Field"
-    page.theme_mode = ThemeMode.LIGHT
+    page.theme_mode = ThemeMode.SYSTEM
     page.horizontal_alignment = "center"
     page.vertical_alignment = "center"
 
@@ -44,13 +44,17 @@ def main(page: Page):
 
     async def start_animation():
         textfield = Text_Field(hint_text="Do a search...")
-        page.add(textfield)
+
+
+        page.add(
+            textfield
+        )
+
         page.update()
         await textfield.placeholder_auto()
 
     
     asyncio.run(start_animation()) # Run the animation
-
 
 if __name__ == "__main__":
     app(target=main)
