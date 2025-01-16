@@ -8,7 +8,7 @@
 </br>
 
  <p>
-  Os Widgets são micro aplicativos que são exibidos na tela de um computador, numa página da web ou num dispositivo móvel. Flet oferece uma ampla variedade de widgets para construção de interfaces. Neste repositório está alguns dos mais comuns.
+  Widgets are micro applications that are displayed on a computer screen, a web page or a mobile device. Flet offers a wide variety of widgets for building interfaces. This repository contains some of the most common ones.
  </p>
  </br>
  
@@ -19,11 +19,11 @@
 </br>
 </br>
 
- ## Contribuições
+ <h2>Contributions</h2>
 </br>
 
 <p>
-Contribuições são bem-vindas! Se quiser melhorar o projeto, adicionar novas funcionalidades ou corrigir problemas, fique à vontade.
+Contributions are welcome! If you want to improve the project, add new features or fix bugs, feel free to do so.
 </p>
 <hr>
 </br>
