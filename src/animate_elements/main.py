@@ -2,16 +2,16 @@ import flet as ft
 import asyncio
 
 def main(page: ft.Page):
-    # Configurações iniciais da página
+    #Initial page settings
     page.title = "Animate Elements"  
     page.theme_mode = ft.ThemeMode.LIGHT  
-    page.vertical_alignment = ft.MainAxisAlignment.CENTER  # Centraliza os elementos verticalmente
-    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER  # Centraliza os elementos horizontalmente
+    page.vertical_alignment = ft.MainAxisAlignment.CENTER  
+    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER  
 
-    # Função assíncrona para realizar a animação
+    # Asynchronous function to perform the animation
     async def animate():
-        while True:  # Loop infinito para alternar animações
-            # Primeiro estado da animação
+        while True:  # Infinite loop to switch animations
+            # Fist state of animation
             image.rotate.angle = -6.5  
             image.opacity = 1  
             image.offset.y = -0.5  
@@ -19,7 +19,7 @@ def main(page: ft.Page):
             image.update()  
             await asyncio.sleep(5)  
 
-            # Segundo estado da animação
+            # Second state of animation
             image.rotate.angle = 0  
             image.opacity = 0.2 
             image.offset.y = 0  
@@ -32,19 +32,19 @@ def main(page: ft.Page):
         width=100,  
         height=100,  
 
-        # Configuração de rotação e animação associada
+        # Rotation setting and associated animation
         rotate=ft.Rotate(angle=0),
         animate_rotation=ft.animation.Animation(3000, ft.AnimationCurve.EASE_IN),
 
-        # Configuração de opacidade e animação associada
+        # Opacity setting and associated animation
         opacity=0,
         animate_opacity=ft.animation.Animation(3000, ft.AnimationCurve.EASE_IN),
 
-        # Configuração de deslocamento e animação associada
+        # Displacement setting and associated animation
         offset=ft.Offset(x=0, y=0),
         animate_offset=ft.animation.Animation(3000, ft.AnimationCurve.EASE_IN),
 
-        # Configuração de escala e animação associada
+        # Scale setting and associated animation
         scale=ft.Scale(scale=1),
         animate_scale=ft.animation.Animation(3000, ft.AnimationCurve.EASE_IN),
     )

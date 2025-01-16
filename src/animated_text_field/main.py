@@ -45,14 +45,12 @@ def main(page: Page):
     async def start_animation():
         textfield = Text_Field(hint_text="Do a search...")
 
-
         page.add(
             textfield
         )
 
         page.update()
         await textfield.placeholder_auto()
-
     
     asyncio.run(start_animation()) # Run the animation
 

@@ -1,42 +1,46 @@
-import flet as ft
+from flet import(
+    Page, app, MainAxisAlignment, CrossAxisAlignment, 
+    Theme, ThemeMode, Colors, Container, ElevatedButton, ColorScheme
+)
 
-def main(page: ft.Page):
+def main(page: Page):
     page.title = "page theme"
-    page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
+    page.vertical_alignment = MainAxisAlignment.CENTER
+    page.horizontal_alignment = CrossAxisAlignment.CENTER
+    page.theme_mode=ThemeMode.DARK
     
     # Yellow page theme with SYSTEM (default) mode
-    page.theme = ft.Theme(
-        color_scheme_seed=ft.Colors.WHITE,
+    page.theme = Theme(
+        color_scheme_seed=Colors.YELLOW
     )
 
     page.add(
         # Page theme
-        ft.Container(
-            content=ft.ElevatedButton("Page theme button"),
-            bgcolor=ft.Colors.SURFACE_CONTAINER_HIGHEST,  # Correção aqui
+        Container(
+            content=ElevatedButton("Page theme button", bgcolor=Colors.PRIMARY_CONTAINER),
+            bgcolor=Colors.PRIMARY,  # Correction here
             padding=20,
             width=300,
         ),
 
         # Inherited theme with primary color overridden
-        ft.Container(
-            theme=ft.Theme(color_scheme=ft.ColorScheme(primary=ft.Colors.BLUE)),
-            content=ft.ElevatedButton("Inherited theme button"),
-            bgcolor=ft.Colors.ON_SURFACE_VARIANT,  # Correção aqui
+        Container(
+            theme=Theme(color_scheme=ColorScheme(primary=Colors.RED)),
+            content=ElevatedButton("Inherited theme button"),
+            bgcolor=Colors.ON_SURFACE_VARIANT,  # Correction here
             padding=20,
             width=300,
         ),
 
         # Unique always DARK theme
-        ft.Container(
-            theme=ft.Theme(color_scheme_seed=ft.Colors.INDIGO),
-            theme_mode=ft.ThemeMode.DARK,
-            content=ft.ElevatedButton("Unique theme button"),
-            bgcolor=ft.Colors.ON_SURFACE_VARIANT,  # Correção aqui
+        Container(
+            theme=Theme(color_scheme_seed=Colors.ORANGE_ACCENT),
+            theme_mode=ThemeMode.LIGHT,
+            content=ElevatedButton("Unique theme button"),
+            bgcolor=Colors.ON_SURFACE_VARIANT,  # Correction here
             padding=20,
             width=300,
         ),
     )
 
-ft.app(main)
+app(main)

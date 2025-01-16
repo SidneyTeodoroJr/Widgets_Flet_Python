@@ -5,6 +5,7 @@ def main(page:ft.Page):
     page.padding=0
     page.theme_mode=ft.ThemeMode.DARK
     page.title = "SideBar and GridView"
+    page.window_center()
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.theme = ft.Theme(scrollbar_theme=ft.ScrollbarTheme(thumb_color=ft.Colors.ON_SURFACE,))
