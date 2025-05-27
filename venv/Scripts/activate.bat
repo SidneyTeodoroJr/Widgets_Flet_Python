@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=K:\workspace_dev\projects_python\flet\Widgets_Flet_Python\venv"
+set "VIRTUAL_ENV=E:\workspace_dev\projects_python\flet\Widgets_Flet_Python\venv"
 
 if not defined PROMPT set PROMPT=$P$G
 
